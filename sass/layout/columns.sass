@@ -1,0 +1,23 @@
+@charset "utf-8"
+
+.columns
+  // 修饰类
+  &.is-centered
+    justify-content: center
+  &.is-multiline
+    flex-wrap: wrap
+  &.is-vcentered
+    align-items: center
+  // 在平板+设备上采用 Flex 布局
+  +tablet
+    display: flex
+
+.column
+  display: block
+  &.is-grow
+    flex-grow: 1
+  @for $i from 1 through 12
+    &.is-#{$i}
+      width: ($i / 12) * 100%
+    &.is-offset-#{$i}
+      margin-left: ($i / 12) * 100%

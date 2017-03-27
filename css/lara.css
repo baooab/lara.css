@@ -15,4 +15,67 @@
     .container {
       width: 1344px; } }
 
+.columns.is-centered {
+  justify-content: center; }
+.columns.is-multiline {
+  flex-wrap: wrap; }
+.columns.is-vcentered {
+  align-items: center; }
+@media screen and (min-width: 769px) {
+  .columns {
+    display: flex; } }
+
+.column {
+  display: block; }
+  .column.is-grow {
+    flex-grow: 1; }
+  .column.is-1 {
+    width: 8.33333%; }
+  .column.is-offset-1 {
+    margin-left: 8.33333%; }
+  .column.is-2 {
+    width: 16.66667%; }
+  .column.is-offset-2 {
+    margin-left: 16.66667%; }
+  .column.is-3 {
+    width: 25%; }
+  .column.is-offset-3 {
+    margin-left: 25%; }
+  .column.is-4 {
+    width: 33.33333%; }
+  .column.is-offset-4 {
+    margin-left: 33.33333%; }
+  .column.is-5 {
+    width: 41.66667%; }
+  .column.is-offset-5 {
+    margin-left: 41.66667%; }
+  .column.is-6 {
+    width: 50%; }
+  .column.is-offset-6 {
+    margin-left: 50%; }
+  .column.is-7 {
+    width: 58.33333%; }
+  .column.is-offset-7 {
+    margin-left: 58.33333%; }
+  .column.is-8 {
+    width: 66.66667%; }
+  .column.is-offset-8 {
+    margin-left: 66.66667%; }
+  .column.is-9 {
+    width: 75%; }
+  .column.is-offset-9 {
+    margin-left: 75%; }
+  .column.is-10 {
+    width: 83.33333%; }
+  .column.is-offset-10 {
+    margin-left: 83.33333%; }
+  .column.is-11 {
+    width: 91.66667%; }
+  .column.is-offset-11 {
+    margin-left: 91.66667%; }
+  .column.is-12 {
+    width: 100%; }
+  .column.is-offset-12 {
+    margin-left: 100%; }
+
 /*# sourceMappingURL=lara.css.map */

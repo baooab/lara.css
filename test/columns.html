@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/lara.css">
+    <style type="text/css">
+    body, ul, h2 {
+        margin: 0;
+    }
+
+    body {
+        margin-bottom: 50px;
+    }
+
+    .columns {
+        background-color: #eee;
+        min-height: 100px;
+    }
+
+    .columns + .columns {
+        margin-top: 0.75rem;
+    }
+
+    .column:nth-child(2n) {
+        background-color: #ccc;
+    }
+    .column:nth-child(2n-1) {
+        background-color: #aaa;
+    }
+
+    .i-full-screen {
+        min-height: 100vh;
+        background-color: #eee;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="columns is-centered is-vcentered i-full-screen">
+        <div class="column"><h2><code>.columns.is-centered.is-vcentered &gt; .column</code></h2></div>
+    </div>
+
+    <div class="container">
+        <h2><code>.columns.is-centered &gt; .column</code></h2>
+        <div class="columns is-centered">
+            <div class="column"><code>.column</code></div>
+            <div class="column"><code>.column</code></div>
+            <div class="column"><code>.column</code></div>
+            <div class="column"><code>.column</code></div>
+        </div>
+
+        <h2><code>.columns &gt; .column.is-6.is-offset-3</code></h2>
+        <div class="columns">
+            <div class="column is-6 is-offset-3"><code>.column.is-6.is-offset-3</code></div>
+        </div>
+
+        <h2><code>.columns &gt; .column.is-grow</code></h2>
+        <div class="columns">
+            <div class="column is-grow"><code>.column.is-grow</code></div>
+            <div class="column"><code>.column</code></div>
+        </div>
+    </div>
+
+</body>
+</html>
