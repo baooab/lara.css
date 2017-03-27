@@ -1,0 +1,52 @@
+@charset "utf-8"
+
+// 响应式布局
+
+=from($device)
+  @media screen and (min-width: $device)
+    @content
+
+=until($device)
+  @media screen and (max-width: $device - 1px)
+    @content
+
+// 平板宽度以下的设备认为是手机设备
+=mobile
+  @media screen and (max-width: $tablet - 1px)
+    @content
+
+=tablet
+  @media screen and (min-width: $tablet)
+    @content
+
+// 仅在平板设备下
+=table-only
+  @media screen and (min-width: $tablet) and  (max-width: $desktop - 1px)
+    @content
+
+// 桌面宽度以下的设备认为是触屏设备
+=touch
+  @media screen and (max-width: $desktop - 1px)
+    @content
+
+=desktop
+  @media screen and (min-width: $desktop)
+    @content
+
+// 仅在桌面设备下
+=desktop-only
+  @media screen and (min-width: $desktop) and (max-width: $widescreen - 1px)
+    @content
+
+=widescreen
+  @media screen and (min-width: $widescreen)
+    @content
+
+// 仅在宽屏设备下
+=widescreen-only
+  @media screen and (min-width: $widescreen) and (max-width: $fullhd - 1px)
+    @content
+
+=fullhd
+  @media screen and (min-width: $fullhd)
+    @content

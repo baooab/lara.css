@@ -1,0 +1,18 @@
+@charset "utf-8"
+
+.container
+  position: relative
+  // 不设置桌面以下设备的 container
+  +desktop
+    margin: 0 auto
+    width: $desktop - 40px
+    // 修饰类
+    // .container.is-fluid 不固定长度、左右两边保留 20px 的外边距，在桌面+设备上有效
+    &.is-fluid
+      margin: 0 20px
+      max-width: none
+      width: auto
+  +widescreen
+    width: $widescreen - 40px
+  +fullhd
+    width: $fullhd - 40px

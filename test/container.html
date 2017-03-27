@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/lara.css">
+    <style type="text/css">
+    body, ul {
+        margin: 0;
+    }
+
+    .container {
+        background-color: #eee;
+        min-height: 100px;
+    }
+
+    .container + .container {
+        margin-top: 0.75rem;
+     }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        在桌面、宽屏和大屏设备下，<code>.container</code> 的宽度将固定为“对应阈值 - 40px”。设备和对应的阈值情况如下：
+        <ul>
+            <li>桌面：<code>1000px</code></li>
+            <li>宽屏：<code>1192px</code></li>
+            <li>大屏：<code>1384px</code></li>
+        </ul>
+    </div>
+    <div class="container is-fluid">
+        在桌面设备（&gt; 1000px）下，<code>.container.is-fluid</code> 不固定长度、左右两边保留 <code>20px</code> 的外边距。
+    </div>
+
+</body>
+</html>

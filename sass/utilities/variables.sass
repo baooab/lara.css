@@ -1,0 +1,17 @@
+@charset "utf-8"
+
+// 定义设备宽度阈值（一共提供了 4 个），用在响应式布局上
+// 4 个阈值分成 5 类设备：手机、面板、桌面、宽屏和大屏
+// 在手机和平板设备上（0px ~ 768px）上，宽度为“auto”
+// 在桌面、宽屏和大屏设备下，宽度固定为“对应阈值 - 40px”
+// 比如在桌面设备（1000px ~ 1191px）上，宽度固定为“1000px - 40px”，也就是 960px
+// 对应地，能推算出在宽屏和大屏设备下的宽度被分别固定为 1152px 和 1344px。
+// 之所以选择使用 960px、1152px 和 1344px 这三个值，是因为
+// 它们可以被 12 和 16 整除
+$tablet: 769px !default
+// 960px .container + 40px
+$desktop: 1000px !default
+// 1152px .container + 40
+$widescreen: 1192px !default
+// 1344px .container + 40
+$fullhd: 1384px !default
