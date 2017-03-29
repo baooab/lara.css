@@ -1,13 +1,56 @@
 @charset "utf-8"
 
 // 颜色
-$black: #000
+$black:        hsl(0, 0%, 4%) !default
+$black-bis:    hsl(0, 0%, 7%) !default
+$black-ter:    hsl(0, 0%, 14%) !default
+
+$grey-darker:  hsl(0, 0%, 21%) !default
+$grey-dark:    hsl(0, 0%, 29%) !default
+$grey:         hsl(0, 0%, 48%) !default
+$grey-light:   hsl(0, 0%, 71%) !default
+$grey-lighter: hsl(0, 0%, 86%) !default
+
+$white-ter:    hsl(0, 0%, 96%) !default
+$white-bis:    hsl(0, 0%, 98%) !default
+$white:        hsl(0, 0%, 100%) !default
+
+$orange:       hsl(14,  100%, 53%) !default
+$yellow:       hsl(48,  100%, 67%) !default
+$green:        hsl(141, 71%,  48%) !default
+$turquoise:    hsl(171, 100%, 41%) !default
+$blue:         hsl(217, 71%,  53%) !default
+$purple:       hsl(271, 100%, 71%) !default
+$red:          hsl(348, 100%, 61%) !default
 
 // 链接颜色
 $link: #558abb !default
 
-// 其它
+// 背景和边框的颜色
+$background: $white-ter !default
+
+$border: $grey-lighter !default
+$border-hover: $grey-light !default
+
+// 圆角
+$radius-small: 2px !default
+$radius: 3px !default
 $radius-large: 5px !default
+
+// 文字颜色、大小和粗细
+$text: $grey-dark !default
+$text-light: $grey !default
+$text-strong: $grey-darker !default
+
+$size-small: 0.75rem !default
+$size-normal: 1rem !default
+$size-medium: 1.25rem !default
+$size-large: 1.5rem !default
+
+$weight-light: 300 !default
+$weight-normal: 400 !default
+$weight-semibold: 500 !default
+$weight-bold: 700 !default
 
 // 定义设备宽度阈值（一共提供了 4 个），用在响应式布局上
 // 4 个阈值分成 5 类设备：手机、面板、桌面、宽屏和大屏

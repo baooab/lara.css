@@ -1,5 +1,10 @@
 @charset "utf-8"
 
+// 块状元素件的间距
+=block
+  &:not(:last-child)
+    margin-bottom: 1.5rem
+
 // 响应式布局
 
 =from($device)
